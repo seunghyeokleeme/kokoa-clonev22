@@ -5,32 +5,41 @@
     <meta charset="utf-8" />
     <style>
       body {
-        height: 1000vh;
-        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+
+      @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait) {
+        div {
+          background-color: wheat;
+        }
       }
       span {
-        background: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+        font-size: 36px;
       }
-      input {
-        border: 1px solid wheat;
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
       }
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: pink;
+      @media print {
+        body {
+          background-color: tomato;
+        }
       }
     </style>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <div></div>
+    <span>Please flip your phone:(</span>
   </body>
 </html>
