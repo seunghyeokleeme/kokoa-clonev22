@@ -4,23 +4,22 @@
     <title>Devinan title</title>
     <meta charset="utf-8" />
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 55px;
-        transition: border-radius 1s ease-in-out;
+      @keyframes superSexyCoinFlip {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(180deg) translateX(100px);
+        }
       }
-      a:hover {
-        border-radius: 20px;
-        color: tomato;
-        background-color: wheat;
+      img {
+        border: 5px solid black;
+        border-radius: 50%;
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
       }
     </style>
   </head>
   <body>
-    <a href="#">Go home</a>
+    <img src="img/logo.png" />
   </body>
 </html>
