@@ -27,11 +27,23 @@
         If you have a Kakao Account, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kakao Account or Password</a>
+    <form action="friends.html" method="get" class="login-form">
+      <input
+        class="login-form__input"
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__input"
+        name="password"
+        required
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-form__btn" type="submit" value="Log In" />
+      <a class="login-form__a" href="#">Find Kakao Account or Password</a>
     </form>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
