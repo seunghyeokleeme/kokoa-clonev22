@@ -1,5 +1,4 @@
 .more-screen .user-component__text {
-  background-color: yellow;
   position: relative;
 }
 
@@ -7,4 +6,24 @@
   position: absolute;
   bottom: 0px;
   right: -20px;
+}
+
+.more-screen .icon-row {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.more-screen .icon-row__icon {
+  width: 110px;
+  margin-bottom: 50px;
+}
+
+.more-suggestions {
+  padding-top: 40px;
+  border-top: var(--main-border);
+}
+
+.more-suggestions__title {
+  margin-bottom: 20px;
 }
