@@ -1,0 +1,10 @@
+.more-screen .user-component__text {
+  background-color: yellow;
+  position: relative;
+}
+
+.more-screen .user-component__exclamation {
+  position: absolute;
+  bottom: 0px;
+  right: -20px;
+}
