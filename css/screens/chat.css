@@ -100,6 +100,21 @@
   font-size: 14px;
 }
 
+@keyframes incomingMessage {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.message-row--friend {
+  animation: incomingMessage 0.5s ease-out forwards;
+}
+
 .message-row--own {
   justify-content: flex-end;
 }
