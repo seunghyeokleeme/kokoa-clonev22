@@ -2,9 +2,12 @@
   position: relative;
 }
 
-.more-screen .user-component__exclamation {
+.more__notification {
   position: absolute;
-  bottom: 0px;
+}
+
+.more-screen .badge--exclamation {
+  bottom: 1px;
   right: -20px;
 }
 
@@ -17,6 +20,15 @@
 .more-screen .icon-row__icon {
   width: 110px;
   margin-bottom: 50px;
+}
+
+.more-screen .icon-row__icon:nth-child(2) {
+  position: relative;
+}
+
+.more-screen .icon-row .badge--sm {
+  top: -30px;
+  right: 25px;
 }
 
 .more-suggestions {
