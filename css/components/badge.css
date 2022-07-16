@@ -1,16 +1,26 @@
 .badge {
+  width: 15px;
+  height: 15px;
   background-color: tomato;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
   color: white;
   font-weight: 600;
+}
+
+.badge--lg {
+  width: 30px;
+  height: 30px;
 }
 
 .badge--sm {
   width: 10px;
   height: 10px;
+}
+
+.badge--exclamation {
+  color: tomato;
+  background-color: white;
 }

@@ -22,12 +22,7 @@
 }
 
 .header__notification {
-  width: 10px;
-  height: 10px;
   position: absolute;
-}
-
-.header__notification--sm {
   right: -10px;
   top: -10px;
 }
