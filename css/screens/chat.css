@@ -24,7 +24,7 @@
   z-index: 1;
 }
 
-@keyframes fadeIn {
+@keyframes chat-fadeIn {
   from {
     transform: translateY(30px);
     opacity: 0;
@@ -41,7 +41,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 14px;
-  animation: fadeIn 0.8s linear;
+  animation: chat-fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
