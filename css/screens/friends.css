@@ -16,6 +16,10 @@
   padding: 0px var(--horizontal-space);
 }
 
+.friends-screen .user-component:first-child {
+  margin: 0;
+}
+
 .friends-screen__channel {
   margin-top: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
