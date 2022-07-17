@@ -85,8 +85,8 @@
 }
 
 .open-post__heart-count {
-  background-color: var(--gray-color);
-  color: white;
+  color: black;
+  background-color: white;
   padding: 5px;
   border-radius: 20px;
   display: flex;
@@ -95,6 +95,11 @@
   bottom: 10px;
   right: 10px;
   font-size: 12px;
+}
+
+.open-post:last-child .open-post__heart-count {
+  background-color: var(--gray-color);
+  color: white;
 }
 
 .open-post__heart-count span {
