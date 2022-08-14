@@ -11,4 +11,6 @@ app.get("/", function (req, res) {
   res.send("Kakao Clone");
 });
 
-app.listen(PORT, () => console.log("http://localhost:4000"));
+app.listen(PORT, () =>
+  console.log(`🚀 Kokoa-clone app listening on port http://localhost:${PORT}`)
+);
