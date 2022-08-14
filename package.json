@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "kakaotalk clone",
   "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devinan/kokoa-clonev22.git"
