@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import globalRouter from "./routers/globalRouter";
+import roomRouter from "./routers/roomRouter";
 
 const PORT = 4000;
 
@@ -9,10 +10,8 @@ const logger = morgan("dev");
 app.use(logger);
 
 app.use("/", globalRouter);
+app.use("/rooms", roomRouter);
 
-app.get("/rooms", function (req, res) {
-  res.send("Kakao Chat Room");
-});
 app.get("/views", function (req, res) {
   res.send("Kakao Views list");
 });
