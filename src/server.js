@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import globalRouter from "./routers/globalRouter";
 
 const PORT = 4000;
 
@@ -7,15 +8,8 @@ const app = express();
 const logger = morgan("dev");
 app.use(logger);
 
-app.get("/", function (req, res) {
-  res.send("Kakao Clone");
-});
-app.get("/join", function (req, res) {
-  res.send("Kakao Join");
-});
-app.get("/login", function (req, res) {
-  res.send("Kakao Login");
-});
+app.use("/", globalRouter);
+
 app.get("/rooms", function (req, res) {
   res.send("Kakao Chat Room");
 });
@@ -25,6 +19,7 @@ app.get("/views", function (req, res) {
 app.get("/shoppings", function (req, res) {
   res.send("Kakao Shopping nav");
 });
+
 app.get("/mores", function (req, res) {
   res.send("Kakao Mores nav");
 });
