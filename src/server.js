@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import globalRouter from "./routers/globalRouter";
 import roomRouter from "./routers/roomRouter";
+import viewRouter from "./routers/viewRouter";
 
 const PORT = 4000;
 
@@ -11,10 +12,8 @@ app.use(logger);
 
 app.use("/", globalRouter);
 app.use("/rooms", roomRouter);
+app.use("/views", viewRouter);
 
-app.get("/views", function (req, res) {
-  res.send("Kakao Views list");
-});
 app.get("/shoppings", function (req, res) {
   res.send("Kakao Shopping nav");
 });
